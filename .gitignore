@@ -1,0 +1,13 @@
+data/raw/
+*.[Rr][Dd]ata
+*.rda
+*.rds
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.DS_Store
+data/reference/
