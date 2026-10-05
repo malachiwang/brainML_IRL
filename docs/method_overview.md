@@ -170,14 +170,36 @@ This equivalence is useful. It explains why current-pair v0 contributes no
 action-dependent sequential structure. It is not evidence that IRL generally
 reduces to BT or that the model describes human habits.
 
-## What comes next, and what does not happen here
+## The next milestone: causal running-rate history
 
-The next scientific step is to specify a minimal **causal history variable**,
-its update after each action, and a synthetic mechanism that actually uses it.
+The [history-sensitive baseline](history_model.md) now implements this sequence:
+
+```text
+fixed Fake Bob
+    -> history-sensitive Fake Bob
+    -> recover known history parameter
+    -> later: real-human model comparison
+```
+
+It adds the centered running choice rate `H_i=C_i/N_i-0.5`, calculated before
+each synthetic choice, to effective utility as `U_i+alpha*H_i`. Counts update
+only afterward and carry across sessions by default. Each independent Fake
+Human starts fresh. Alpha=0 reproduces the original agent exactly; the new
+estimator fits signed alpha and base utilities with a sequential conditional
+likelihood. It does not solve a history-augmented Bellman problem. The
+[actual results](history_baseline.md) include noisy single-agent estimates,
+the zero-effect control, held-out session-5 prediction, and frozen equal-value
+probes. Human actions remain unused.
+
+## Later work, beyond the current-pair IRL milestone
+
+The original next step was to specify a minimal **causal history variable**,
+its update after each action, and a synthetic mechanism that actually uses it;
+the running-rate milestone above provides that first example.
 For example, a previous-choice variable could change as a consequence of the
 current action. History must be computed from past observations only; reward
 features must make that history relevant before it can affect preferences.
 That design should be tested for identifiability and recovery on held-out
 synthetic trajectories before any human reward inference. Merely appending an
-unused history label would not make the problem informative. None of this
-history-aware model, habit mechanism, or human fitting is implemented here.
+unused history label would not make the problem informative. Formal
+history-aware IRL, validated habit mechanisms, and human fitting remain future work.

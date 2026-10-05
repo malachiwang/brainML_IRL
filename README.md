@@ -57,6 +57,20 @@ failed fits, and gamma/transition-kernel checks. Add `--output PATH.json` to sav
 synthetic results. Read the [plain-language method overview](docs/method_overview.md)
 and [actual IRL comparison results](docs/irl_baseline.md).
 
+A third milestone adds a causal running-choice-rate effect to Fake Human and
+recovers its signed strength with a sequential likelihood (not history-aware IRL):
+
+```sh
+python scripts/run_history_baseline.py --participant E11T9A --beta 1 --alphas 0 0.5 1 --seeds 0 1 2 3 4 --rollouts 1 5 20 --output docs/history_baseline_results.json
+```
+
+Here `--rollouts` means independent agents with fresh history, not concatenated
+copies. History carries across sessions by default; optional
+`--reset-history-each-session` applies the same reset rule in simulation and
+inference. See [the history mechanism](docs/history_model.md) and
+[its recovery/prediction results](docs/history_baseline.md), including the
+small-sample limitations. The original v0 baselines remain unchanged.
+
 The default chooses the lexicographically first supplied participant and prints
 the ID. This is deterministic selection for a demonstration, not selection by
 accuracy, human choices, or recovery quality. All supplied rows are retained.
@@ -177,5 +191,6 @@ or preprocessing rules were added.
 
 Later work could study history-dependent choices, richer states, learning or
 habit mechanisms, human model comparison, and formal sequential IRL with an
-action-dependent environment. History, learning, and habit mechanisms remain
-outside v0; the next step is to specify and validate a causal history state.
+action-dependent environment. History remains outside v0; the separate
+running-rate milestone implements and evaluates one synthetic history mechanism.
+Human fitting, reward learning, and formal history-aware IRL remain future work.
