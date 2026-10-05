@@ -24,19 +24,12 @@ class RecoveryResult:
     n_trials: int
 
 
-def recover_utilities(
-    choices: pd.DataFrame, *, beta: float = 1.0, reference: int = 1,
-) -> RecoveryResult:
-    """Fit from ONLY displayed pairs and synthetic actions; no rewards/truth.
+def validated_choices(choices: pd.DataFrame) -> tuple[np.ndarray, np.ndarray]:
+    """Validate pairwise demonstrations and finite-MLE identifiability.
 
-    Fix U_reference = 0 and keep beta known and fixed. Unknown beta and utility
-    scale cannot both be identified. Disconnected comparisons or separation
-    raise rather than fabricating estimates with an implicit prior/penalty.
+    Shared by BT and the action-independent v0 IRL likelihood; does not fit
+    anything or read truth, human actions, or reward columns.
     """
-    if not np.isfinite(beta) or beta <= 0:
-        raise ValueError("Recovery requires a fixed, finite beta > 0.")
-    if reference not in range(1, 9):
-        raise ValueError("Reference stimulus must be in 1..8.")
     required = {"left_stimulus", "right_stimulus", "synthetic_action"}
     if missing := required - set(choices.columns):
         raise ValueError(f"Missing choice columns: {sorted(missing)}")
@@ -53,7 +46,25 @@ def recover_utilities(
         raise RecoveryError("Comparison graph is disconnected: one reference cannot identify all eight utilities.")
     if connected_components(graph, directed=True, connection="strong", return_labels=False) != 1:
         raise RecoveryError("Choices are separated: no finite unregularized MLE. Collect more stochastic choices or lower simulation beta.")
+    return pairs, chose_left
 
+
+def recover_utilities(
+    choices: pd.DataFrame, *, beta: float = 1.0, reference: int = 1,
+) -> RecoveryResult:
+    """Fit from ONLY displayed pairs and synthetic actions; no rewards/truth.
+
+    Fix U_reference = 0 and keep beta known and fixed. Unknown beta and utility
+    scale cannot both be identified. Disconnected comparisons or separation
+    raise rather than fabricating estimates with an implicit prior/penalty.
+    """
+    if not np.isfinite(beta) or beta <= 0:
+        raise ValueError("Recovery requires a fixed, finite beta > 0.")
+    if reference not in range(1, 9):
+        raise ValueError("Reference stimulus must be in 1..8.")
+    pairs, chose_left = validated_choices(choices)
+    winner = np.where(chose_left, pairs[:, 0], pairs[:, 1]) - 1
+    loser = np.where(chose_left, pairs[:, 1], pairs[:, 0]) - 1
     # Aggregate identical winner/loser observations, preserving their counts.
     # This is the same trial-wise likelihood, with at most 64 distinct rows.
     comparisons, counts = np.unique(np.column_stack([winner, loser]), axis=0, return_counts=True)

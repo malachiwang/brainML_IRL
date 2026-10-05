@@ -1,1 +1,1 @@
-"""Reward Pairs synthetic pairwise-choice baseline (not sequential IRL)."""
+"""Reward Pairs synthetic pairwise-choice and explicit current-pair soft-IRL baselines."""

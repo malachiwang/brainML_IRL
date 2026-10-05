@@ -1,8 +1,10 @@
 # Reward Pairs: synthetic utility recovery baseline
 
 A small Python research starting point for inverse reinforcement learning and
-human decision making. This first pass tests **pairwise-choice utility recovery**;
-it is **not a full sequential IRL implementation or a result about human rewards**.
+human decision making. The original baseline tests **pairwise-choice utility
+recovery**. An explicit current-pair MDP and soft-optimal IRL baseline now test
+why action-independent dynamics give the same answer. These are synthetic
+sanity checks, **not results about human rewards or generic sequential IRL**.
 
 ## Scientific question
 
@@ -43,6 +45,17 @@ python scripts/run_baseline.py --participant E11T9A --beta 1 --seeds 0 1 2 3 4 -
 python scripts/run_baseline.py --data /path/to/file.RData --show-participants
 python scripts/run_baseline.py --object data_RP_training_clean
 ```
+
+Compare the existing estimator with explicit soft-IRL on identical choices:
+
+```sh
+python scripts/run_irl_baseline.py --participant E11T9A --beta 1 --gamma 0.95 --seeds 0 1 2 3 4 --repeats 1 5 20
+```
+
+The new script prints both fitted vectors and likelihoods, evaluation metrics,
+failed fits, and gamma/transition-kernel checks. Add `--output PATH.json` to save
+synthetic results. Read the [plain-language method overview](docs/method_overview.md)
+and [actual IRL comparison results](docs/irl_baseline.md).
 
 The default chooses the lexicographically first supplied participant and prints
 the ID. This is deterministic selection for a demonstration, not selection by
@@ -146,14 +159,23 @@ learning. Larger runs within a seed share the smaller run's choice prefix.
 ## Scope and files
 
 The pair is an externally supplied context, and choices have no modeled effect
-on future states. This resembles a contextual-bandit/pairwise-choice problem.
-Chronological storage alone does not make it sequential IRL: there are no
-transition dynamics, discounting, planning, or inferred learning mechanisms.
+on future states. The new MDP has explicit empirical transitions, discounting,
+and soft Bellman planning. Its continuation value is identical for both actions,
+so it cancels from their comparison: the policy still reduces to the same
+contextual-bandit/pairwise logistic form. This equivalence is the finding, not
+evidence of recovered human learning mechanisms. Session endings and gaps in
+retained trial numbers end observed fragments; the transition model is a
+stationary approximation, not a reconstruction of the exact experimental schedule.
 
 `src/reward_pairs/` contains `data.py`, `trajectories.py`, `simulation.py`,
 `recovery.py`, and `evaluation.py`. `scripts/run_baseline.py` connects them;
 `tests/` checks data handling, simulation, identifiability, and recovery.
+`mdp.py` adds transitions, one-hot rewards, soft value iteration, and Bellman
+derivatives; `irl.py` fits the soft policy's demonstration likelihood.
+`scripts/run_irl_baseline.py` compares the two estimators. No new dependencies
+or preprocessing rules were added.
 
 Later work could study history-dependent choices, richer states, learning or
 habit mechanisms, human model comparison, and formal sequential IRL with an
-explicit environment. None of those scientific choices are made in v0.
+action-dependent environment. History, learning, and habit mechanisms remain
+outside v0; the next step is to specify and validate a causal history state.
