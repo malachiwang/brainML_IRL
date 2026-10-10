@@ -191,6 +191,23 @@ likelihood. It does not solve a history-augmented Bellman problem. The
 the zero-effect control, held-out session-5 prediction, and frozen equal-value
 probes. Human actions remain unused.
 
+## Replication across experimental scaffolds
+
+```text
+history-sensitive Fake Bob on one scaffold
+    -> replication across many experimental scaffolds
+    -> later: formal history-aware IRL / human modeling
+```
+
+The [replication milestone](history_replication.md) repeats the same simulator,
+history definition, and sequential likelihood on structurally selected displayed
+pair sequences. Twelve scaffolds span retained trajectory lengths, with E11T9A
+kept as a reference. Ten independent seed batches per scaffold measure both
+small-sample spurious history effects and recovery with 1, 5, or 20 independent
+synthetic agents. No human action enters selection, simulation, or fitting.
+History-aware IRL and human model comparison remain later work, not part of
+this replication.
+
 ## Later work, beyond the current-pair IRL milestone
 
 The original next step was to specify a minimal **causal history variable**,

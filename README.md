@@ -194,3 +194,15 @@ habit mechanisms, human model comparison, and formal sequential IRL with an
 action-dependent environment. History remains outside v0; the separate
 running-rate milestone implements and evaluates one synthetic history mechanism.
 Human fitting, reward learning, and formal history-aware IRL remain future work.
+
+The [multi-scaffold replication](docs/history_replication.md) repeats the unchanged
+history baseline across 12 structurally selected sequences and 10 seed batches:
+
+```sh
+python scripts/run_history_replication.py --secondary-negative \
+  --output docs/history_replication_results.json
+```
+
+Defaults are beta=1, alpha=0/0.5/1, and 1/5/20 independent rollouts per fit.
+The optional negative control uses alpha=-1 at 20 rollouts. The report includes
+full recovery distributions, failures, held-out prediction, and equal-value probes.
