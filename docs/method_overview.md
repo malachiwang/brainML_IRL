@@ -205,8 +205,28 @@ pair sequences. Twelve scaffolds span retained trajectory lengths, with E11T9A
 kept as a reference. Ten independent seed batches per scaffold measure both
 small-sample spurious history effects and recovery with 1, 5, or 20 independent
 synthetic agents. No human action enters selection, simulation, or fitting.
-History-aware IRL and human model comparison remain later work, not part of
-this replication.
+History-aware IRL and human model comparison were not part of that replication.
+
+## Planning history Bob and sequential IRL
+
+```text
+fixed Fake Bob
+    -> myopic history-sensitive Fake Bob
+    -> replication across schedules
+    -> planning history-sensitive Fake Bob
+    -> history-aware sequential IRL recovery
+    -> later: uncertainty calibration + real-human modeling
+```
+
+The [planning milestone](history_irl.md) explicitly models how choosing now
+changes future count states and history-dependent rewards. State is `(t,C)`;
+the known scaffold determines presentation counts and future displayed pairs.
+An exact finite-lookahead soft planner supplies Q-based choice probabilities,
+and a matched policy-likelihood estimator recovers utilities and signed alpha.
+The old myopic simulator is unchanged. Eight-trial exact DP verifies the logic;
+bounded lookahead on real scaffolds is not claimed to solve full-horizon IRL.
+The [results](history_irl_results.md) compare recovery, runtime, policy changes,
+and myopic/planning mismatch using synthetic choices only.
 
 ## Later work, beyond the current-pair IRL milestone
 
@@ -218,5 +238,7 @@ current action. History must be computed from past observations only; reward
 features must make that history relevant before it can affect preferences.
 That design should be tested for identifiability and recovery on held-out
 synthetic trajectories before any human reward inference. Merely appending an
-unused history label would not make the problem informative. Formal
-history-aware IRL, validated habit mechanisms, and human fitting remain future work.
+unused history label would not make the problem informative. The new bounded
+planning milestone is a first explicit history-aware IRL example, not a validated
+habit mechanism. Uncertainty calibration, broader planning formulations, and
+human fitting remain future work.

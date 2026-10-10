@@ -193,7 +193,8 @@ Later work could study history-dependent choices, richer states, learning or
 habit mechanisms, human model comparison, and formal sequential IRL with an
 action-dependent environment. History remains outside v0; the separate
 running-rate milestone implements and evaluates one synthetic history mechanism.
-Human fitting, reward learning, and formal history-aware IRL remain future work.
+Human fitting and reward learning remain future work. A separate bounded
+history-aware planning milestone is described below.
 
 The [multi-scaffold replication](docs/history_replication.md) repeats the unchanged
 history baseline across 12 structurally selected sequences and 10 seed batches:
@@ -206,3 +207,17 @@ python scripts/run_history_replication.py --secondary-negative \
 Defaults are beta=1, alpha=0/0.5/1, and 1/5/20 independent rollouts per fit.
 The optional negative control uses alpha=-1 at 20 rollouts. The report includes
 full recovery distributions, failures, held-out prediction, and equal-value probes.
+
+The [history-aware planning milestone](docs/history_irl.md) adds a separate
+Planning Bob and matched finite-lookahead policy-likelihood IRL:
+
+```sh
+python scripts/run_history_irl.py --lookahead 3 --lookaheads 0 1 3 5 \
+  --alphas 0 0.5 1 --rollouts 5 20 --seed-batches 0 1 2 3 4 \
+  --output docs/history_irl_results.json
+```
+
+It includes exact toy DP, guarded runtime/state-count diagnostics, both directions
+of myopic/planning mismatch, and causal held-out prediction. The original myopic
+Bob remains unchanged. Read the [results](docs/history_irl_results.md): bounded
+lookahead is not full-horizon IRL, and planning effects need not be large.
