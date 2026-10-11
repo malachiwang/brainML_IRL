@@ -230,6 +230,25 @@ and myopic/planning mismatch using synthetic choices only.
 
 ## Later work, beyond the current-pair IRL milestone
 
+The [uncertainty and model-comparison milestone](history_calibration.md) separates
+evidence for a nonzero history parameter from evidence for forward planning:
+
+```text
+history mechanism validated
+    -> history replication across scaffolds
+    -> history-aware planning validated
+    -> uncertainty + model distinguishability calibration
+    -> NEXT: real-human model comparison, if justified
+```
+
+It profiles alpha while re-fitting nuisance utilities, measures synthetic
+interval coverage and detection errors, and compares h=0 with h=3 using both
+session holdout and fresh independent evaluation agents. Early/mid/late windows
+are predeclared. Neither nominal interval confidence nor a tiny predictive win
+is treated as proof of a psychological mechanism. Read the
+[calibration results](history_calibration_results.md) before deciding whether
+individual human inference or planning claims are justified.
+
 The original next step was to specify a minimal **causal history variable**,
 its update after each action, and a synthetic mechanism that actually uses it;
 the running-rate milestone above provides that first example.
@@ -240,5 +259,6 @@ That design should be tested for identifiability and recovery on held-out
 synthetic trajectories before any human reward inference. Merely appending an
 unused history label would not make the problem informative. The new bounded
 planning milestone is a first explicit history-aware IRL example, not a validated
-habit mechanism. Uncertainty calibration, broader planning formulations, and
-human fitting remain future work.
+habit mechanism. The calibration milestone above now tests nominal uncertainty
+and predictive distinguishability. Any further uncertainty corrections, broader
+planning formulations, and human fitting remain separate future work.

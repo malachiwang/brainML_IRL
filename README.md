@@ -221,3 +221,17 @@ It includes exact toy DP, guarded runtime/state-count diagnostics, both directio
 of myopic/planning mismatch, and causal held-out prediction. The original myopic
 Bob remains unchanged. Read the [results](docs/history_irl_results.md): bounded
 lookahead is not full-horizon IRL, and planning effects need not be large.
+
+The [calibration study](docs/history_calibration.md) keeps both models fixed and
+tests profile-likelihood coverage for alpha and held-out h=0-versus-h=3 selection:
+
+```sh
+python scripts/run_history_calibration.py --workers 4 \
+  --output docs/history_calibration_results.json
+```
+
+Defaults reuse all 12 stored scaffolds, alpha=0/0.5/1 and 1/5/20 agents, with ten
+uncertainty batches, five model-comparison batches, and twenty fresh evaluation
+agents. `--study uncertainty` or `--study distinguishability` runs either part.
+The [results report](docs/history_calibration_results.md) distinguishes history
+detection from planning identification; neither analysis fits human choices.
