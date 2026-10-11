@@ -1,0 +1,1161 @@
+{
+  "participant": "E11T9A",
+  "parity": [
+    {
+      "variant": "paper_intended",
+      "model": 1,
+      "parameters": "fixed",
+      "objective_deviance_difference": 2.2737367544323206e-12,
+      "training_deviance_difference": 2.2737367544323206e-12,
+      "test_deviance_difference": -8.526512829121202e-14,
+      "probability_max_difference": 5.551115123125783e-17,
+      "q_max_difference": 1.734723475976807e-18,
+      "h_max_difference": 0.0
+    },
+    {
+      "variant": "paper_intended",
+      "model": 1,
+      "parameters": "fitted",
+      "objective_deviance_difference": -1.8189894035458565e-12,
+      "training_deviance_difference": -1.8189894035458565e-12,
+      "test_deviance_difference": 5.968558980384842e-13,
+      "probability_max_difference": 0.0,
+      "q_max_difference": 1.734723475976807e-18,
+      "h_max_difference": 0.0
+    },
+    {
+      "variant": "paper_intended",
+      "model": 3,
+      "parameters": "fixed",
+      "objective_deviance_difference": 6.480149750132114e-12,
+      "training_deviance_difference": 6.480149750132114e-12,
+      "test_deviance_difference": 9.947598300641403e-14,
+      "probability_max_difference": 4.440892098500626e-16,
+      "q_max_difference": 1.734723475976807e-18,
+      "h_max_difference": 0.0
+    },
+    {
+      "variant": "paper_intended",
+      "model": 3,
+      "parameters": "fitted",
+      "objective_deviance_difference": -1.0459189070388675e-11,
+      "training_deviance_difference": -1.0459189070388675e-11,
+      "test_deviance_difference": 8.526512829121202e-14,
+      "probability_max_difference": 3.3306690738754696e-16,
+      "q_max_difference": 1.734723475976807e-18,
+      "h_max_difference": 0.0
+    },
+    {
+      "variant": "paper_intended",
+      "model": 11,
+      "parameters": "fixed",
+      "objective_deviance_difference": -2.2737367544323206e-13,
+      "training_deviance_difference": -2.2737367544323206e-13,
+      "test_deviance_difference": 0.0,
+      "probability_max_difference": 3.3306690738754696e-16,
+      "q_max_difference": 1.734723475976807e-18,
+      "h_max_difference": 0.0
+    },
+    {
+      "variant": "paper_intended",
+      "model": 11,
+      "parameters": "fitted",
+      "objective_deviance_difference": -6.821210263296962e-13,
+      "training_deviance_difference": -6.821210263296962e-13,
+      "test_deviance_difference": 0.0,
+      "probability_max_difference": 3.3306690738754696e-16,
+      "q_max_difference": 1.734723475976807e-18,
+      "h_max_difference": 0.0
+    },
+    {
+      "variant": "paper_intended",
+      "model": 19,
+      "parameters": "fixed",
+      "objective_deviance_difference": -2.2737367544323206e-13,
+      "training_deviance_difference": -2.2737367544323206e-13,
+      "test_deviance_difference": 5.684341886080802e-14,
+      "probability_max_difference": 4.996003610813204e-16,
+      "q_max_difference": 1.734723475976807e-18,
+      "h_max_difference": 0.0
+    },
+    {
+      "variant": "paper_intended",
+      "model": 19,
+      "parameters": "fitted",
+      "objective_deviance_difference": 5.684341886080801e-13,
+      "training_deviance_difference": 5.684341886080801e-13,
+      "test_deviance_difference": -2.842170943040401e-14,
+      "probability_max_difference": 3.3306690738754696e-16,
+      "q_max_difference": 1.734723475976807e-18,
+      "h_max_difference": 0.0
+    },
+    {
+      "variant": "paper_intended",
+      "model": 20,
+      "parameters": "fixed",
+      "objective_deviance_difference": 7.275957614183426e-12,
+      "training_deviance_difference": 7.275957614183426e-12,
+      "test_deviance_difference": 3.0098590286797844e-11,
+      "probability_max_difference": 8.881784197001252e-16,
+      "q_max_difference": 1.734723475976807e-18,
+      "h_max_difference": 0.0
+    },
+    {
+      "variant": "paper_intended",
+      "model": 20,
+      "parameters": "fitted",
+      "objective_deviance_difference": -7.958078640513122e-13,
+      "training_deviance_difference": -7.958078640513122e-13,
+      "test_deviance_difference": 5.684341886080802e-14,
+      "probability_max_difference": 3.885780586188048e-16,
+      "q_max_difference": 1.734723475976807e-18,
+      "h_max_difference": 5.551115123125783e-17
+    },
+    {
+      "variant": "released_code_intended",
+      "model": 1,
+      "parameters": "fixed",
+      "objective_deviance_difference": 2.2737367544323206e-12,
+      "training_deviance_difference": 2.2737367544323206e-12,
+      "test_deviance_difference": -8.526512829121202e-14,
+      "probability_max_difference": 5.551115123125783e-17,
+      "q_max_difference": 3.469446951953614e-18,
+      "h_max_difference": 3.469446951953614e-18
+    },
+    {
+      "variant": "released_code_intended",
+      "model": 1,
+      "parameters": "fitted",
+      "objective_deviance_difference": -1.8189894035458565e-12,
+      "training_deviance_difference": -1.8189894035458565e-12,
+      "test_deviance_difference": 5.968558980384842e-13,
+      "probability_max_difference": 0.0,
+      "q_max_difference": 3.469446951953614e-18,
+      "h_max_difference": 3.469446951953614e-18
+    },
+    {
+      "variant": "released_code_intended",
+      "model": 3,
+      "parameters": "fixed",
+      "objective_deviance_difference": 5.9117155615240335e-12,
+      "training_deviance_difference": 5.9117155615240335e-12,
+      "test_deviance_difference": 9.947598300641403e-14,
+      "probability_max_difference": 4.440892098500626e-16,
+      "q_max_difference": 3.469446951953614e-18,
+      "h_max_difference": 3.469446951953614e-18
+    },
+    {
+      "variant": "released_code_intended",
+      "model": 3,
+      "parameters": "fitted",
+      "objective_deviance_difference": -1.0800249583553523e-11,
+      "training_deviance_difference": -1.0800249583553523e-11,
+      "test_deviance_difference": 1.8474111129762605e-13,
+      "probability_max_difference": 3.3306690738754696e-16,
+      "q_max_difference": 3.469446951953614e-18,
+      "h_max_difference": 3.469446951953614e-18
+    },
+    {
+      "variant": "released_code_intended",
+      "model": 11,
+      "parameters": "fixed",
+      "objective_deviance_difference": -3.410605131648481e-13,
+      "training_deviance_difference": -3.410605131648481e-13,
+      "test_deviance_difference": 0.0,
+      "probability_max_difference": 3.3306690738754696e-16,
+      "q_max_difference": 3.469446951953614e-18,
+      "h_max_difference": 3.469446951953614e-18
+    },
+    {
+      "variant": "released_code_intended",
+      "model": 11,
+      "parameters": "fitted",
+      "objective_deviance_difference": 2.2737367544323206e-13,
+      "training_deviance_difference": 2.2737367544323206e-13,
+      "test_deviance_difference": 5.684341886080802e-14,
+      "probability_max_difference": 3.3306690738754696e-16,
+      "q_max_difference": 3.469446951953614e-18,
+      "h_max_difference": 3.469446951953614e-18
+    },
+    {
+      "variant": "released_code_intended",
+      "model": 19,
+      "parameters": "fixed",
+      "objective_deviance_difference": -3.410605131648481e-13,
+      "training_deviance_difference": -3.410605131648481e-13,
+      "test_deviance_difference": 5.684341886080802e-14,
+      "probability_max_difference": 6.661338147750939e-16,
+      "q_max_difference": 3.469446951953614e-18,
+      "h_max_difference": 3.469446951953614e-18
+    },
+    {
+      "variant": "released_code_intended",
+      "model": 19,
+      "parameters": "fitted",
+      "objective_deviance_difference": 3.410605131648481e-13,
+      "training_deviance_difference": 3.410605131648481e-13,
+      "test_deviance_difference": 0.0,
+      "probability_max_difference": 3.3306690738754696e-16,
+      "q_max_difference": 3.469446951953614e-18,
+      "h_max_difference": 5.551115123125783e-17
+    },
+    {
+      "variant": "released_code_intended",
+      "model": 20,
+      "parameters": "fixed",
+      "objective_deviance_difference": 5.4569682106375694e-12,
+      "training_deviance_difference": 5.4569682106375694e-12,
+      "test_deviance_difference": 3.0098590286797844e-11,
+      "probability_max_difference": 8.881784197001252e-16,
+      "q_max_difference": 3.469446951953614e-18,
+      "h_max_difference": 3.469446951953614e-18
+    },
+    {
+      "variant": "released_code_intended",
+      "model": 20,
+      "parameters": "fitted",
+      "objective_deviance_difference": -1.0231815394945443e-12,
+      "training_deviance_difference": -7.958078640513122e-13,
+      "test_deviance_difference": 5.684341886080802e-14,
+      "probability_max_difference": 7.216449660063518e-16,
+      "q_max_difference": 1.1102230246251565e-16,
+      "h_max_difference": 1.3877787807814457e-17
+    },
+    {
+      "variant": "released_code_literal_clean_r",
+      "model": 1,
+      "parameters": "fixed",
+      "objective_deviance_difference": 2.2737367544323206e-12,
+      "training_deviance_difference": 4.8203219193965197e-11,
+      "test_deviance_difference": 6.821210263296962e-13,
+      "probability_max_difference": 1.1102230246251565e-16,
+      "q_max_difference": 3.469446951953614e-18,
+      "h_max_difference": 3.469446951953614e-18
+    },
+    {
+      "variant": "released_code_literal_clean_r",
+      "model": 1,
+      "parameters": "fitted",
+      "objective_deviance_difference": -1.8189894035458565e-12,
+      "training_deviance_difference": 2.7284841053187847e-11,
+      "test_deviance_difference": 3.751665644813329e-12,
+      "probability_max_difference": 1.1102230246251565e-16,
+      "q_max_difference": 3.469446951953614e-18,
+      "h_max_difference": 3.469446951953614e-18
+    },
+    {
+      "variant": "released_code_literal_clean_r",
+      "model": 3,
+      "parameters": "fixed",
+      "objective_deviance_difference": 5.9117155615240335e-12,
+      "training_deviance_difference": -2.637534635141492e-11,
+      "test_deviance_difference": 2.2737367544323206e-13,
+      "probability_max_difference": 2.220446049250313e-16,
+      "q_max_difference": 3.469446951953614e-18,
+      "h_max_difference": 3.469446951953614e-18
+    },
+    {
+      "variant": "released_code_literal_clean_r",
+      "model": 3,
+      "parameters": "fitted",
+      "objective_deviance_difference": -1.0800249583553523e-11,
+      "training_deviance_difference": 2.3646862246096134e-11,
+      "test_deviance_difference": 1.5916157281026244e-12,
+      "probability_max_difference": 2.220446049250313e-16,
+      "q_max_difference": 3.469446951953614e-18,
+      "h_max_difference": 3.469446951953614e-18
+    },
+    {
+      "variant": "released_code_literal_clean_r",
+      "model": 11,
+      "parameters": "fixed",
+      "objective_deviance_difference": -3.410605131648481e-13,
+      "training_deviance_difference": -7.275957614183426e-12,
+      "test_deviance_difference": 5.684341886080801e-13,
+      "probability_max_difference": 2.220446049250313e-16,
+      "q_max_difference": 3.469446951953614e-18,
+      "h_max_difference": 3.469446951953614e-18
+    },
+    {
+      "variant": "released_code_literal_clean_r",
+      "model": 11,
+      "parameters": "fitted",
+      "objective_deviance_difference": 2.2737367544323206e-13,
+      "training_deviance_difference": -9.094947017729282e-13,
+      "test_deviance_difference": -5.684341886080801e-13,
+      "probability_max_difference": 2.220446049250313e-16,
+      "q_max_difference": 3.469446951953614e-18,
+      "h_max_difference": 3.469446951953614e-18
+    },
+    {
+      "variant": "released_code_literal_clean_r",
+      "model": 19,
+      "parameters": "fixed",
+      "objective_deviance_difference": -3.410605131648481e-13,
+      "training_deviance_difference": 1.0459189070388675e-11,
+      "test_deviance_difference": -1.1368683772161603e-12,
+      "probability_max_difference": 4.440892098500626e-16,
+      "q_max_difference": 3.469446951953614e-18,
+      "h_max_difference": 3.469446951953614e-18
+    },
+    {
+      "variant": "released_code_literal_clean_r",
+      "model": 19,
+      "parameters": "fitted",
+      "objective_deviance_difference": 3.410605131648481e-13,
+      "training_deviance_difference": 5.4569682106375694e-12,
+      "test_deviance_difference": -4.547473508864641e-13,
+      "probability_max_difference": 2.220446049250313e-16,
+      "q_max_difference": 3.469446951953614e-18,
+      "h_max_difference": 5.551115123125783e-17
+    },
+    {
+      "variant": "released_code_literal_clean_r",
+      "model": 20,
+      "parameters": "fixed",
+      "objective_deviance_difference": 5.4569682106375694e-12,
+      "training_deviance_difference": -2.405613486189395e-10,
+      "test_deviance_difference": -6.1166360865172464e-09,
+      "probability_max_difference": 9.43689570931383e-16,
+      "q_max_difference": 3.469446951953614e-18,
+      "h_max_difference": 3.469446951953614e-18
+    },
+    {
+      "variant": "released_code_literal_clean_r",
+      "model": 20,
+      "parameters": "fitted",
+      "objective_deviance_difference": -1.0231815394945443e-12,
+      "training_deviance_difference": -1.318767317570746e-11,
+      "test_deviance_difference": 3.1957370083546266e-10,
+      "probability_max_difference": 5.551115123125783e-16,
+      "q_max_difference": 1.1102230246251565e-16,
+      "h_max_difference": 1.3877787807814457e-17
+    }
+  ],
+  "original_r_optimization": [
+    {
+      "deviance": 1084.2408331421136,
+      "convergence": 52,
+      "theta": [
+        2.4603879947676006
+      ],
+      "variant": "paper_intended",
+      "model": 1,
+      "starts": 10,
+      "minus_python_deviance": -1.0686562745831907e-11
+    },
+    {
+      "deviance": 799.1041389221009,
+      "convergence": 0,
+      "theta": [
+        0.271118662610171,
+        1.3559867321872268
+      ],
+      "variant": "paper_intended",
+      "model": 3,
+      "starts": 10,
+      "minus_python_deviance": 2.0509105524979532e-10
+    },
+    {
+      "deviance": 819.0018674622305,
+      "convergence": 0,
+      "theta": [
+        0.047923683791954816,
+        3.072864967175492
+      ],
+      "variant": "paper_intended",
+      "model": 11,
+      "starts": 10,
+      "minus_python_deviance": 5.482490905706072e-08
+    },
+    {
+      "deviance": 716.6440960309856,
+      "convergence": 0,
+      "theta": [
+        0.07177509628964003,
+        1.9800180512029948,
+        1.0,
+        0.9709343402201855
+      ],
+      "variant": "paper_intended",
+      "model": 19,
+      "starts": 10,
+      "minus_python_deviance": 5.3397116062114947e-08
+    },
+    {
+      "deviance": 736.8746353170999,
+      "convergence": 0,
+      "theta": [
+        0.002057163310112868,
+        8.966918126087604,
+        0.3350640335777832
+      ],
+      "variant": "paper_intended",
+      "model": 20,
+      "starts": 10,
+      "minus_python_deviance": 0.15420842564742543,
+      "fine_difference_diagnostic": {
+        "deviance": 736.7204268914662,
+        "convergence": 0,
+        "theta": [
+          0.00197006503963553,
+          8.979999996826951,
+          1.0
+        ],
+        "finite_difference_step": 1e-06,
+        "minus_python_deviance": 1.375610736431554e-11
+      }
+    },
+    {
+      "deviance": 1084.2408331421136,
+      "convergence": 52,
+      "theta": [
+        2.4603879947676006
+      ],
+      "variant": "released_code_intended",
+      "model": 1,
+      "starts": 10,
+      "minus_python_deviance": -1.0686562745831907e-11
+    },
+    {
+      "deviance": 799.9031551340997,
+      "convergence": 0,
+      "theta": [
+        0.3303431350282619,
+        1.3497605763658005
+      ],
+      "variant": "released_code_intended",
+      "model": 3,
+      "starts": 10,
+      "minus_python_deviance": 2.5011104298755527e-12
+    },
+    {
+      "deviance": 820.8353605666284,
+      "convergence": 0,
+      "theta": [
+        0.04036464102658092,
+        3.114277485843748
+      ],
+      "variant": "released_code_intended",
+      "model": 11,
+      "starts": 10,
+      "minus_python_deviance": 4.0838131099008024e-07
+    },
+    {
+      "deviance": 721.063811525806,
+      "convergence": 0,
+      "theta": [
+        0.08801954687497135,
+        1.8737234065691664,
+        1.0,
+        0.978949999862334
+      ],
+      "variant": "released_code_intended",
+      "model": 19,
+      "starts": 10,
+      "minus_python_deviance": 2.4240193852165248e-08
+    },
+    {
+      "deviance": 895.8910527422371,
+      "convergence": 52,
+      "theta": [
+        0.08065601437168773,
+        4.282644060227963,
+        0.00136254806427319
+      ],
+      "variant": "released_code_intended",
+      "model": 20,
+      "starts": 10,
+      "minus_python_deviance": 0.1698218573532131,
+      "fine_difference_diagnostic": {
+        "deviance": 895.7212308848862,
+        "convergence": 0,
+        "theta": [
+          0.07992927582975609,
+          4.293835954387342,
+          0.0012638584316074816
+        ],
+        "finite_difference_step": 1e-06,
+        "minus_python_deviance": 2.2737367544323206e-12
+      }
+    }
+  ],
+  "synthetic": [
+    {
+      "model": 3,
+      "setting": 0,
+      "independent_agents": 30,
+      "trials_per_agent": 783,
+      "truth": [
+        0.15,
+        1.2
+      ],
+      "estimate": [
+        0.1724759763595886,
+        1.1875130570150014
+      ],
+      "absolute_error": [
+        0.022475976359588618,
+        0.012486942984998528
+      ],
+      "truth_deviance": 25775.87260347166,
+      "free_parameters": {
+        "authors_alpha_rl": 0.1724759763595886,
+        "authors_beta_rl": 1.1875130570150014
+      },
+      "parameters": {
+        "authors_alpha_ck": 0.0,
+        "authors_beta_ck": 0.0,
+        "authors_alpha_rl": 0.1724759763595886,
+        "authors_beta_rl": 1.1875130570150014,
+        "bias": 2.5
+      },
+      "optimizer_objective_deviance": 25774.60529276629,
+      "optimization_success": true,
+      "restart_count": 10,
+      "failed_starts": 0,
+      "boundary_flags": {
+        "authors_alpha_rl": false,
+        "authors_beta_rl": false
+      },
+      "restart_deviances": [
+        25774.60529276629,
+        25774.6052927663,
+        25774.605292766297,
+        25774.605292766297,
+        25774.605292766297,
+        25774.6052927663,
+        25774.6052927663,
+        25774.605292766297,
+        25774.605292766297,
+        25774.605292766297
+      ],
+      "restart_success": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "unsuccessful_starts": [],
+      "best_start": {
+        "initial": [
+          0.7586962196789682,
+          6.277212175454014
+        ],
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "deviance": 25774.60529276629,
+        "theta": [
+          0.1724759763595886,
+          1.1875130570150014
+        ],
+        "iterations": 13,
+        "evaluations": 24
+      },
+      "fit_seconds": 1.876656666980125
+    },
+    {
+      "model": 3,
+      "setting": 1,
+      "independent_agents": 30,
+      "trials_per_agent": 783,
+      "truth": [
+        0.6,
+        0.8
+      ],
+      "estimate": [
+        0.5043186245476236,
+        0.7888415323590704
+      ],
+      "absolute_error": [
+        0.09568137545237643,
+        0.011158467640929648
+      ],
+      "truth_deviance": 29188.651328564225,
+      "free_parameters": {
+        "authors_alpha_rl": 0.5043186245476236,
+        "authors_beta_rl": 0.7888415323590704
+      },
+      "parameters": {
+        "authors_alpha_ck": 0.0,
+        "authors_beta_ck": 0.0,
+        "authors_alpha_rl": 0.5043186245476236,
+        "authors_beta_rl": 0.7888415323590704,
+        "bias": 2.5
+      },
+      "optimizer_objective_deviance": 29186.32323635589,
+      "optimization_success": true,
+      "restart_count": 10,
+      "failed_starts": 0,
+      "boundary_flags": {
+        "authors_alpha_rl": false,
+        "authors_beta_rl": false
+      },
+      "restart_deviances": [
+        29186.32323635589,
+        29186.32323635591,
+        29186.323236357013,
+        29186.3232363559,
+        29186.323236355896,
+        29186.323236355936,
+        29186.323236355896,
+        29186.323236355896,
+        29186.323236355893,
+        29186.323236355896
+      ],
+      "restart_success": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "unsuccessful_starts": [],
+      "best_start": {
+        "initial": [
+          0.9492718970612622,
+          1.1375237525287085
+        ],
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "deviance": 29186.32323635589,
+        "theta": [
+          0.5043186245476236,
+          0.7888415323590704
+        ],
+        "iterations": 10,
+        "evaluations": 24
+      },
+      "fit_seconds": 1.9578147910069674
+    },
+    {
+      "model": 11,
+      "setting": 0,
+      "independent_agents": 30,
+      "trials_per_agent": 783,
+      "truth": [
+        0.15,
+        2.0
+      ],
+      "estimate": [
+        0.14663377437577874,
+        2.0345547883409214
+      ],
+      "absolute_error": [
+        0.0033662256242212585,
+        0.034554788340921405
+      ],
+      "truth_deviance": 27954.185803106444,
+      "free_parameters": {
+        "authors_alpha_ck": 0.14663377437577874,
+        "authors_beta_ck": 2.0345547883409214
+      },
+      "parameters": {
+        "authors_alpha_ck": 0.14663377437577874,
+        "authors_beta_ck": 2.0345547883409214,
+        "authors_alpha_rl": 0.0,
+        "authors_beta_rl": 0.0,
+        "bias": 2.5
+      },
+      "optimizer_objective_deviance": 27953.144407400898,
+      "optimization_success": true,
+      "restart_count": 10,
+      "failed_starts": 0,
+      "boundary_flags": {
+        "authors_alpha_ck": false,
+        "authors_beta_ck": false
+      },
+      "restart_deviances": [
+        27953.1444074009,
+        27953.144407400898,
+        27953.144407400898,
+        27953.1444074009,
+        27953.144407400905,
+        27953.1444074009,
+        27953.144407400898,
+        27953.144407400898,
+        27953.144407400905,
+        27953.144407400898
+      ],
+      "restart_success": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "unsuccessful_starts": [],
+      "best_start": {
+        "initial": [
+          0.6404148748298175,
+          9.36172541391803
+        ],
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "deviance": 27953.144407400898,
+        "theta": [
+          0.14663377437577874,
+          2.0345547883409214
+        ],
+        "iterations": 14,
+        "evaluations": 27
+      },
+      "fit_seconds": 1.6422915000002831
+    },
+    {
+      "model": 11,
+      "setting": 1,
+      "independent_agents": 30,
+      "trials_per_agent": 783,
+      "truth": [
+        0.5,
+        1.2
+      ],
+      "estimate": [
+        0.5066431891473232,
+        1.2029192470322363
+      ],
+      "absolute_error": [
+        0.006643189147323203,
+        0.0029192470322363384
+      ],
+      "truth_deviance": 29594.33941615575,
+      "free_parameters": {
+        "authors_alpha_ck": 0.5066431891473232,
+        "authors_beta_ck": 1.2029192470322363
+      },
+      "parameters": {
+        "authors_alpha_ck": 0.5066431891473232,
+        "authors_beta_ck": 1.2029192470322363,
+        "authors_alpha_rl": 0.0,
+        "authors_beta_rl": 0.0,
+        "bias": 2.5
+      },
+      "optimizer_objective_deviance": 29593.969930521846,
+      "optimization_success": true,
+      "restart_count": 10,
+      "failed_starts": 0,
+      "boundary_flags": {
+        "authors_alpha_ck": false,
+        "authors_beta_ck": false
+      },
+      "restart_deviances": [
+        29593.969930521846,
+        29593.969930521856,
+        29593.96993052185,
+        29593.969930521856,
+        29593.969930521853,
+        29593.969930521853,
+        29593.96993052185,
+        29593.969930521853,
+        29593.969930521853,
+        29593.96993052186
+      ],
+      "restart_success": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "unsuccessful_starts": [],
+      "best_start": {
+        "initial": [
+          0.06230109363235534,
+          0.5774527786010877
+        ],
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "deviance": 29593.969930521846,
+        "theta": [
+          0.5066431891473232,
+          1.2029192470322363
+        ],
+        "iterations": 9,
+        "evaluations": 12
+      },
+      "fit_seconds": 1.5043419590219855
+    },
+    {
+      "model": 19,
+      "setting": 0,
+      "independent_agents": 30,
+      "trials_per_agent": 783,
+      "truth": [
+        0.15,
+        1.5,
+        0.25,
+        1.0
+      ],
+      "estimate": [
+        0.1501644061660679,
+        1.4608458317958852,
+        0.28461464374042345,
+        0.9912016107229367
+      ],
+      "absolute_error": [
+        0.00016440616606791525,
+        0.03915416820411477,
+        0.034614643740423445,
+        0.008798389277063334
+      ],
+      "truth_deviance": 22764.297599469843,
+      "free_parameters": {
+        "authors_alpha_ck": 0.1501644061660679,
+        "authors_beta_ck": 1.4608458317958852,
+        "authors_alpha_rl": 0.28461464374042345,
+        "authors_beta_rl": 0.9912016107229367
+      },
+      "parameters": {
+        "authors_alpha_ck": 0.1501644061660679,
+        "authors_beta_ck": 1.4608458317958852,
+        "authors_alpha_rl": 0.28461464374042345,
+        "authors_beta_rl": 0.9912016107229367,
+        "bias": 2.5
+      },
+      "optimizer_objective_deviance": 22761.962077820404,
+      "optimization_success": true,
+      "restart_count": 10,
+      "failed_starts": 0,
+      "boundary_flags": {
+        "authors_alpha_ck": false,
+        "authors_beta_ck": false,
+        "authors_alpha_rl": false,
+        "authors_beta_rl": false
+      },
+      "restart_deviances": [
+        22761.962077820404,
+        22761.962077820404,
+        22761.96207782041,
+        22761.962077820408,
+        22761.96207782042,
+        22761.96207782043,
+        22761.962077820408,
+        22761.962077820408,
+        22761.96207782041,
+        22761.96207782041
+      ],
+      "restart_success": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "unsuccessful_starts": [],
+      "best_start": {
+        "initial": [
+          0.4138968553361483,
+          8.52180485322699,
+          0.4644041677536443,
+          7.407096118330957
+        ],
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "deviance": 22761.962077820404,
+        "theta": [
+          0.1501644061660679,
+          1.4608458317958852,
+          0.28461464374042345,
+          0.9912016107229367
+        ],
+        "iterations": 22,
+        "evaluations": 41
+      },
+      "fit_seconds": 2.856439374969341
+    },
+    {
+      "model": 19,
+      "setting": 1,
+      "independent_agents": 30,
+      "trials_per_agent": 783,
+      "truth": [
+        0.4,
+        2.0,
+        0.6,
+        0.7
+      ],
+      "estimate": [
+        0.4003861915253948,
+        2.033876622515651,
+        0.53882988248579,
+        0.7122540028077792
+      ],
+      "absolute_error": [
+        0.0003861915253947634,
+        0.03387662251565082,
+        0.061170117514209976,
+        0.012254002807779218
+      ],
+      "truth_deviance": 21362.34247099102,
+      "free_parameters": {
+        "authors_alpha_ck": 0.4003861915253948,
+        "authors_beta_ck": 2.033876622515651,
+        "authors_alpha_rl": 0.53882988248579,
+        "authors_beta_rl": 0.7122540028077792
+      },
+      "parameters": {
+        "authors_alpha_ck": 0.4003861915253948,
+        "authors_beta_ck": 2.033876622515651,
+        "authors_alpha_rl": 0.53882988248579,
+        "authors_beta_rl": 0.7122540028077792,
+        "bias": 2.5
+      },
+      "optimizer_objective_deviance": 21360.31967900298,
+      "optimization_success": true,
+      "restart_count": 10,
+      "failed_starts": 0,
+      "boundary_flags": {
+        "authors_alpha_ck": false,
+        "authors_beta_ck": false,
+        "authors_alpha_rl": false,
+        "authors_beta_rl": false
+      },
+      "restart_deviances": [
+        21360.31967900298,
+        21360.319679002987,
+        21360.31967900299,
+        21360.31967900352,
+        21360.31967900299,
+        21360.31967900299,
+        21360.31967900371,
+        21360.31967900299,
+        21360.31967900326,
+        21360.319679002994
+      ],
+      "restart_success": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "unsuccessful_starts": [],
+      "best_start": {
+        "initial": [
+          0.6540917954347096,
+          5.8130342045868755,
+          0.7591862641819753,
+          4.039688314420638
+        ],
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "deviance": 21360.31967900298,
+        "theta": [
+          0.4003861915253948,
+          2.033876622515651,
+          0.53882988248579,
+          0.7122540028077792
+        ],
+        "iterations": 21,
+        "evaluations": 34
+      },
+      "fit_seconds": 2.724462707992643
+    },
+    {
+      "model": 20,
+      "setting": 0,
+      "independent_agents": 30,
+      "trials_per_agent": 783,
+      "truth": [
+        0.15,
+        8.0,
+        0.25
+      ],
+      "estimate": [
+        0.14466322754948324,
+        7.975495439569279,
+        0.24407297807268974
+      ],
+      "absolute_error": [
+        0.005336772450516752,
+        0.0245045604307208,
+        0.005927021927310261
+      ],
+      "truth_deviance": 1876.906390216445,
+      "free_parameters": {
+        "authors_alpha_ck": 0.14466322754948324,
+        "authors_beta_ck": 7.975495439569279,
+        "authors_alpha_rl": 0.24407297807268974
+      },
+      "parameters": {
+        "authors_alpha_ck": 0.14466322754948324,
+        "authors_beta_ck": 7.975495439569279,
+        "authors_alpha_rl": 0.24407297807268974,
+        "authors_beta_rl": 2.024504560430721,
+        "bias": 2.5
+      },
+      "optimizer_objective_deviance": 1876.0772056912836,
+      "optimization_success": true,
+      "restart_count": 10,
+      "failed_starts": 0,
+      "boundary_flags": {
+        "authors_alpha_ck": false,
+        "authors_beta_ck": false,
+        "authors_alpha_rl": false
+      },
+      "restart_deviances": [
+        1876.0772056912836,
+        1876.077205691285,
+        1876.0772056912842,
+        1876.0772056912858,
+        1876.077205691284,
+        1876.0772056912838,
+        1876.0772056912992,
+        1876.077205691573,
+        1876.0772056912836,
+        1876.0772056912838
+      ],
+      "restart_success": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "unsuccessful_starts": [],
+      "best_start": {
+        "initial": [
+          0.6540917954347096,
+          5.8130342045868755,
+          0.7591862641819753
+        ],
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "deviance": 1876.0772056912836,
+        "theta": [
+          0.14466322754948324,
+          7.975495439569279,
+          0.24407297807268974
+        ],
+        "iterations": 13,
+        "evaluations": 17
+      },
+      "fit_seconds": 1.5737161251017824
+    },
+    {
+      "model": 20,
+      "setting": 1,
+      "independent_agents": 30,
+      "trials_per_agent": 783,
+      "truth": [
+        0.5,
+        9.0,
+        0.6
+      ],
+      "estimate": [
+        0.5091612619218026,
+        8.880877119345332,
+        0.49273663035947024
+      ],
+      "absolute_error": [
+        0.009161261921802555,
+        0.11912288065466825,
+        0.10726336964052974
+      ],
+      "truth_deviance": 1024.1584032094734,
+      "free_parameters": {
+        "authors_alpha_ck": 0.5091612619218026,
+        "authors_beta_ck": 8.880877119345332,
+        "authors_alpha_rl": 0.49273663035947024
+      },
+      "parameters": {
+        "authors_alpha_ck": 0.5091612619218026,
+        "authors_beta_ck": 8.880877119345332,
+        "authors_alpha_rl": 0.49273663035947024,
+        "authors_beta_rl": 1.1191228806546683,
+        "bias": 2.5
+      },
+      "optimizer_objective_deviance": 1021.4203031984541,
+      "optimization_success": true,
+      "restart_count": 10,
+      "failed_starts": 0,
+      "boundary_flags": {
+        "authors_alpha_ck": false,
+        "authors_beta_ck": false,
+        "authors_alpha_rl": false
+      },
+      "restart_deviances": [
+        1021.4203031984543,
+        1021.4203031984542,
+        1021.4203031984541,
+        1021.4203031984591,
+        1021.4203031984543,
+        1021.4203031984542,
+        1021.4203031984541,
+        1021.4203031984541,
+        1021.4203031984542,
+        1021.4203031984548
+      ],
+      "restart_success": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "unsuccessful_starts": [],
+      "best_start": {
+        "initial": [
+          0.7589029706045985,
+          7.528151932546405,
+          0.6310707353209145
+        ],
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "deviance": 1021.4203031984541,
+        "theta": [
+          0.5091612619218026,
+          8.880877119345332,
+          0.49273663035947024
+        ],
+        "iterations": 11,
+        "evaluations": 13
+      },
+      "fit_seconds": 1.506892625009641
+    }
+  ],
+  "runtime_seconds": 128.64970454201102,
+  "refinement_runtime_seconds": 30.056844040984288
+}

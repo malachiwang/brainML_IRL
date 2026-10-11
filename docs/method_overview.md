@@ -1,5 +1,9 @@
 # From displayed pairs to an explicit soft-IRL baseline
 
+The original sections below describe synthetic milestones. The later authors'
+benchmark section explicitly authorizes a separate reproduction fit to human
+choices; it does not change those synthetic estimators or fit our novel model.
+
 ## What we are trying to learn at this milestone
 
 The long-term project concerns human decision making. This experiment asks a
@@ -262,3 +266,21 @@ planning milestone is a first explicit history-aware IRL example, not a validate
 habit mechanism. The calibration milestone above now tests nominal uncertainty
 and predictive distinguishability. Any further uncertainty corrections, broader
 planning formulations, and human fitting remain separate future work.
+
+## Audit of the published RL + choice-kernel benchmark
+
+```text
+our synthetic IRL/history validation
+    -> audit/reproduce published RL + choice-kernel baseline
+    -> NEXT: compare our proposed human model against validated author benchmark
+```
+
+The [source audit](authors_model_audit.md) separates the supplement's model,
+the driver's actual initialization, and fresh-R post-fit scoring. The authors'
+choice kernel is an exponential trace, not our cumulative chosen/presented rate.
+Their alpha_ck is an update speed; our old alpha was a choice weight. The new
+benchmark learns Q from both displayed training rewards and freezes Q at test,
+while H keeps updating causally. It has no forward planning. Human choices are
+used here only to reproduce this benchmark, not to validate psychological
+interpretations or fit our proposed IRL/history model. See the numerical
+[results](authors_baseline_results.md) before selecting a comparison baseline.

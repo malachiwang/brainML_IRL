@@ -1,0 +1,469 @@
+{
+  "participant": "s04t2z",
+  "parity": [
+    {
+      "variant": "paper_intended",
+      "model": 1,
+      "parameters": "fixed",
+      "objective_deviance_difference": 3.183231456205249e-12,
+      "training_deviance_difference": 3.183231456205249e-12,
+      "test_deviance_difference": -2.842170943040401e-14,
+      "probability_max_difference": 5.551115123125783e-17,
+      "q_max_difference": 0.0,
+      "h_max_difference": 0.0
+    },
+    {
+      "variant": "paper_intended",
+      "model": 1,
+      "parameters": "fitted",
+      "objective_deviance_difference": 9.322320693172514e-12,
+      "training_deviance_difference": 9.322320693172514e-12,
+      "test_deviance_difference": -1.1368683772161603e-13,
+      "probability_max_difference": 0.0,
+      "q_max_difference": 0.0,
+      "h_max_difference": 0.0
+    },
+    {
+      "variant": "paper_intended",
+      "model": 3,
+      "parameters": "fixed",
+      "objective_deviance_difference": 5.5706550483591855e-12,
+      "training_deviance_difference": 5.5706550483591855e-12,
+      "test_deviance_difference": 1.4210854715202004e-13,
+      "probability_max_difference": 3.3306690738754696e-16,
+      "q_max_difference": 0.0,
+      "h_max_difference": 0.0
+    },
+    {
+      "variant": "paper_intended",
+      "model": 3,
+      "parameters": "fitted",
+      "objective_deviance_difference": 1.0118128557223827e-11,
+      "training_deviance_difference": 1.0118128557223827e-11,
+      "test_deviance_difference": -2.842170943040401e-14,
+      "probability_max_difference": 4.440892098500626e-16,
+      "q_max_difference": 0.0,
+      "h_max_difference": 0.0
+    },
+    {
+      "variant": "paper_intended",
+      "model": 11,
+      "parameters": "fixed",
+      "objective_deviance_difference": 4.547473508864641e-13,
+      "training_deviance_difference": 4.547473508864641e-13,
+      "test_deviance_difference": -2.842170943040401e-14,
+      "probability_max_difference": 3.3306690738754696e-16,
+      "q_max_difference": 0.0,
+      "h_max_difference": 0.0
+    },
+    {
+      "variant": "paper_intended",
+      "model": 11,
+      "parameters": "fitted",
+      "objective_deviance_difference": -6.821210263296962e-13,
+      "training_deviance_difference": -5.684341886080801e-13,
+      "test_deviance_difference": 8.526512829121202e-14,
+      "probability_max_difference": 3.3306690738754696e-16,
+      "q_max_difference": 0.0,
+      "h_max_difference": 0.0
+    },
+    {
+      "variant": "paper_intended",
+      "model": 19,
+      "parameters": "fixed",
+      "objective_deviance_difference": 3.410605131648481e-13,
+      "training_deviance_difference": 3.410605131648481e-13,
+      "test_deviance_difference": 2.842170943040401e-14,
+      "probability_max_difference": 4.996003610813204e-16,
+      "q_max_difference": 0.0,
+      "h_max_difference": 0.0
+    },
+    {
+      "variant": "paper_intended",
+      "model": 19,
+      "parameters": "fitted",
+      "objective_deviance_difference": 0.0,
+      "training_deviance_difference": 0.0,
+      "test_deviance_difference": 4.263256414560601e-14,
+      "probability_max_difference": 4.440892098500626e-16,
+      "q_max_difference": 4.440892098500626e-16,
+      "h_max_difference": 2.220446049250313e-16
+    },
+    {
+      "variant": "paper_intended",
+      "model": 20,
+      "parameters": "fixed",
+      "objective_deviance_difference": 1.1368683772161603e-12,
+      "training_deviance_difference": 1.1368683772161603e-12,
+      "test_deviance_difference": 1.4921397450962104e-11,
+      "probability_max_difference": 8.881784197001252e-16,
+      "q_max_difference": 0.0,
+      "h_max_difference": 0.0
+    },
+    {
+      "variant": "paper_intended",
+      "model": 20,
+      "parameters": "fitted",
+      "objective_deviance_difference": -4.547473508864641e-13,
+      "training_deviance_difference": -4.547473508864641e-13,
+      "test_deviance_difference": -2.842170943040401e-14,
+      "probability_max_difference": 4.440892098500626e-16,
+      "q_max_difference": 0.0,
+      "h_max_difference": 0.0
+    },
+    {
+      "variant": "released_code_intended",
+      "model": 1,
+      "parameters": "fixed",
+      "objective_deviance_difference": 3.183231456205249e-12,
+      "training_deviance_difference": 3.183231456205249e-12,
+      "test_deviance_difference": -2.842170943040401e-14,
+      "probability_max_difference": 5.551115123125783e-17,
+      "q_max_difference": 1.1102230246251565e-16,
+      "h_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "variant": "released_code_intended",
+      "model": 1,
+      "parameters": "fitted",
+      "objective_deviance_difference": 9.322320693172514e-12,
+      "training_deviance_difference": 9.322320693172514e-12,
+      "test_deviance_difference": -1.1368683772161603e-13,
+      "probability_max_difference": 0.0,
+      "q_max_difference": 1.1102230246251565e-16,
+      "h_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "variant": "released_code_intended",
+      "model": 3,
+      "parameters": "fixed",
+      "objective_deviance_difference": 6.366462912410498e-12,
+      "training_deviance_difference": 6.366462912410498e-12,
+      "test_deviance_difference": 1.1368683772161603e-13,
+      "probability_max_difference": 4.440892098500626e-16,
+      "q_max_difference": 1.1102230246251565e-16,
+      "h_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "variant": "released_code_intended",
+      "model": 3,
+      "parameters": "fitted",
+      "objective_deviance_difference": -1.3642420526593924e-12,
+      "training_deviance_difference": -1.3642420526593924e-12,
+      "test_deviance_difference": -1.1368683772161603e-13,
+      "probability_max_difference": 1.5543122344752192e-15,
+      "q_max_difference": 4.440892098500626e-16,
+      "h_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "variant": "released_code_intended",
+      "model": 11,
+      "parameters": "fixed",
+      "objective_deviance_difference": 3.410605131648481e-13,
+      "training_deviance_difference": 3.410605131648481e-13,
+      "test_deviance_difference": -2.842170943040401e-14,
+      "probability_max_difference": 3.3306690738754696e-16,
+      "q_max_difference": 1.1102230246251565e-16,
+      "h_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "variant": "released_code_intended",
+      "model": 11,
+      "parameters": "fitted",
+      "objective_deviance_difference": 2.2737367544323206e-13,
+      "training_deviance_difference": 2.2737367544323206e-13,
+      "test_deviance_difference": 1.4210854715202004e-13,
+      "probability_max_difference": 5.551115123125783e-16,
+      "q_max_difference": 1.1102230246251565e-16,
+      "h_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "variant": "released_code_intended",
+      "model": 19,
+      "parameters": "fixed",
+      "objective_deviance_difference": 2.2737367544323206e-13,
+      "training_deviance_difference": 2.2737367544323206e-13,
+      "test_deviance_difference": 2.842170943040401e-14,
+      "probability_max_difference": 4.996003610813204e-16,
+      "q_max_difference": 1.1102230246251565e-16,
+      "h_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "variant": "released_code_intended",
+      "model": 19,
+      "parameters": "fitted",
+      "objective_deviance_difference": -5.684341886080801e-13,
+      "training_deviance_difference": -5.684341886080801e-13,
+      "test_deviance_difference": 5.684341886080802e-14,
+      "probability_max_difference": 6.661338147750939e-16,
+      "q_max_difference": 1.1102230246251565e-16,
+      "h_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "variant": "released_code_intended",
+      "model": 20,
+      "parameters": "fixed",
+      "objective_deviance_difference": -9.094947017729282e-13,
+      "training_deviance_difference": -9.094947017729282e-13,
+      "test_deviance_difference": 1.4978240869822912e-11,
+      "probability_max_difference": 7.216449660063518e-16,
+      "q_max_difference": 1.1102230246251565e-16,
+      "h_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "variant": "released_code_intended",
+      "model": 20,
+      "parameters": "fitted",
+      "objective_deviance_difference": 2.8421709430404007e-12,
+      "training_deviance_difference": 2.9558577807620168e-12,
+      "test_deviance_difference": 3.126388037344441e-13,
+      "probability_max_difference": 8.326672684688674e-16,
+      "q_max_difference": 1.1102230246251565e-16,
+      "h_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "variant": "released_code_literal_clean_r",
+      "model": 1,
+      "parameters": "fixed",
+      "objective_deviance_difference": 3.183231456205249e-12,
+      "training_deviance_difference": 5.820766091346741e-11,
+      "test_deviance_difference": 4.547473508864641e-13,
+      "probability_max_difference": 1.1102230246251565e-16,
+      "q_max_difference": 1.1102230246251565e-16,
+      "h_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "variant": "released_code_literal_clean_r",
+      "model": 1,
+      "parameters": "fitted",
+      "objective_deviance_difference": 9.322320693172514e-12,
+      "training_deviance_difference": -1.6370904631912708e-11,
+      "test_deviance_difference": -4.547473508864641e-13,
+      "probability_max_difference": 2.168404344971009e-19,
+      "q_max_difference": 1.1102230246251565e-16,
+      "h_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "variant": "released_code_literal_clean_r",
+      "model": 3,
+      "parameters": "fixed",
+      "objective_deviance_difference": 6.366462912410498e-12,
+      "training_deviance_difference": -2.1827872842550278e-11,
+      "test_deviance_difference": 1.9326762412674725e-12,
+      "probability_max_difference": 2.220446049250313e-16,
+      "q_max_difference": 1.1102230246251565e-16,
+      "h_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "variant": "released_code_literal_clean_r",
+      "model": 3,
+      "parameters": "fitted",
+      "objective_deviance_difference": -1.3642420526593924e-12,
+      "training_deviance_difference": -2.7284841053187847e-12,
+      "test_deviance_difference": 5.9117155615240335e-12,
+      "probability_max_difference": 9.992007221626409e-16,
+      "q_max_difference": 4.440892098500626e-16,
+      "h_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "variant": "released_code_literal_clean_r",
+      "model": 11,
+      "parameters": "fixed",
+      "objective_deviance_difference": 3.410605131648481e-13,
+      "training_deviance_difference": 1.8189894035458565e-12,
+      "test_deviance_difference": 2.2737367544323206e-13,
+      "probability_max_difference": 2.220446049250313e-16,
+      "q_max_difference": 1.1102230246251565e-16,
+      "h_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "variant": "released_code_literal_clean_r",
+      "model": 11,
+      "parameters": "fitted",
+      "objective_deviance_difference": 2.2737367544323206e-13,
+      "training_deviance_difference": 2.7284841053187847e-12,
+      "test_deviance_difference": -1.1368683772161603e-13,
+      "probability_max_difference": 2.220446049250313e-16,
+      "q_max_difference": 1.1102230246251565e-16,
+      "h_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "variant": "released_code_literal_clean_r",
+      "model": 19,
+      "parameters": "fixed",
+      "objective_deviance_difference": 2.2737367544323206e-13,
+      "training_deviance_difference": -5.4569682106375694e-12,
+      "test_deviance_difference": 1.4779288903810084e-12,
+      "probability_max_difference": 3.3306690738754696e-16,
+      "q_max_difference": 1.1102230246251565e-16,
+      "h_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "variant": "released_code_literal_clean_r",
+      "model": 19,
+      "parameters": "fitted",
+      "objective_deviance_difference": -5.684341886080801e-13,
+      "training_deviance_difference": 0.0,
+      "test_deviance_difference": 2.0463630789890885e-12,
+      "probability_max_difference": 2.220446049250313e-16,
+      "q_max_difference": 1.1102230246251565e-16,
+      "h_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "variant": "released_code_literal_clean_r",
+      "model": 20,
+      "parameters": "fixed",
+      "objective_deviance_difference": -9.094947017729282e-13,
+      "training_deviance_difference": 4.320099833421409e-11,
+      "test_deviance_difference": 8.691472430655267e-09,
+      "probability_max_difference": 9.992007221626409e-16,
+      "q_max_difference": 1.1102230246251565e-16,
+      "h_max_difference": 1.1102230246251565e-16
+    },
+    {
+      "variant": "released_code_literal_clean_r",
+      "model": 20,
+      "parameters": "fitted",
+      "objective_deviance_difference": 2.8421709430404007e-12,
+      "training_deviance_difference": -2.2282620193436742e-11,
+      "test_deviance_difference": 6.821210263296962e-13,
+      "probability_max_difference": 4.718447854656915e-16,
+      "q_max_difference": 1.1102230246251565e-16,
+      "h_max_difference": 1.1102230246251565e-16
+    }
+  ],
+  "original_r_optimization": [
+    {
+      "deviance": 732.9262481576616,
+      "convergence": 0,
+      "theta": [
+        0.4133094354661275,
+        1.5781187561492924
+      ],
+      "variant": "paper_intended",
+      "model": 3,
+      "starts": 10,
+      "minus_python_deviance": 5.343281372915953e-12,
+      "rescored_test": {
+        "0.0": {
+          "n": 136,
+          "k": 2,
+          "deviance": 137.16167778552432,
+          "nll": 68.58083889276216,
+          "AIC": 141.16167778552432,
+          "AICc": 141.2519033494341,
+          "BIC": 146.9869875569964
+        },
+        "3.141592653589793": {
+          "n": 136,
+          "k": 2,
+          "deviance": 712.5416824297477,
+          "nll": 356.2708412148738,
+          "AIC": 716.5416824297477,
+          "AICc": 716.6319079936575,
+          "BIC": 722.3669922012198
+        }
+      }
+    },
+    {
+      "deviance": 668.6766588644393,
+      "convergence": 0,
+      "theta": [
+        0.002482912622109478,
+        8.790066081697272,
+        0.42751141937630593
+      ],
+      "variant": "paper_intended",
+      "model": 20,
+      "starts": 10,
+      "minus_python_deviance": 0.09613697595796111,
+      "rescored_test": {
+        "0.0": {
+          "n": 136,
+          "k": 3,
+          "deviance": 147.9201193097901,
+          "nll": 73.96005965489505,
+          "AIC": 153.9201193097901,
+          "AICc": 154.10193749160828,
+          "BIC": 162.65808396699825
+        },
+        "3.141592653589793": {
+          "n": 136,
+          "k": 3,
+          "deviance": 695.2510250580847,
+          "nll": 347.62551252904234,
+          "AIC": 701.2510250580847,
+          "AICc": 701.4328432399028,
+          "BIC": 709.9889897152929
+        }
+      }
+    },
+    {
+      "deviance": 707.2979519103483,
+      "convergence": 52,
+      "theta": [
+        0.0026953801898171002,
+        5.3274163296738335
+      ],
+      "variant": "released_code_intended",
+      "model": 3,
+      "starts": 10,
+      "minus_python_deviance": 0.006215320140768199,
+      "rescored_test": {
+        "0.0": {
+          "n": 136,
+          "k": 2,
+          "deviance": 170.52884560733423,
+          "nll": 85.26442280366712,
+          "AIC": 174.52884560733423,
+          "AICc": 174.619071171244,
+          "BIC": 180.35415537880633
+        },
+        "3.141592653589793": {
+          "n": 136,
+          "k": 2,
+          "deviance": 672.5720887940245,
+          "nll": 336.28604439701223,
+          "AIC": 676.5720887940245,
+          "AICc": 676.6623143579343,
+          "BIC": 682.3973985654966
+        }
+      }
+    },
+    {
+      "deviance": 705.0527659845852,
+      "convergence": 0,
+      "theta": [
+        0.0,
+        8.164481471620896,
+        0.19749209333468995
+      ],
+      "variant": "released_code_intended",
+      "model": 20,
+      "starts": 10,
+      "minus_python_deviance": 4.1154635255225003e-10,
+      "rescored_test": {
+        "0.0": {
+          "n": 136,
+          "k": 3,
+          "deviance": 228.01670704775833,
+          "nll": 114.00835352387917,
+          "AIC": 234.01670704775833,
+          "AICc": 234.19852522957652,
+          "BIC": 242.75467170496648
+        },
+        "3.141592653589793": {
+          "n": 136,
+          "k": 3,
+          "deviance": 724.3265010860193,
+          "nll": 362.16325054300967,
+          "AIC": 730.3265010860193,
+          "AICc": 730.5083192678375,
+          "BIC": 739.0644657432275
+        }
+      }
+    }
+  ],
+  "synthetic": [],
+  "runtime_seconds": 45.81142291694414
+}

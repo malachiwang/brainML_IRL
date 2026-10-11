@@ -6,6 +6,11 @@ recovery**. An explicit current-pair MDP and soft-optimal IRL baseline now test
 why action-independent dynamics give the same answer. These are synthetic
 sanity checks, **not results about human rewards or generic sequential IRL**.
 
+A separate [authors' benchmark audit](docs/authors_model_audit.md) now intentionally
+fits human choices to reproduce the published RL/choice-kernel baseline. It does
+not fit our novel history/IRL model. Read the [reproduction results](docs/authors_baseline_results.md)
+for the distinction between paper-described, code-intended, and literal-R scoring.
+
 ## Scientific question
 
 In the Reward Pairs task, people choose between two displayed stimuli with
@@ -235,3 +240,26 @@ uncertainty batches, five model-comparison batches, and twenty fresh evaluation
 agents. `--study uncertainty` or `--study distinguishability` runs either part.
 The [results report](docs/history_calibration_results.md) distinguishes history
 detection from planning identification; neither analysis fits human choices.
+
+## Authors' benchmark reproduction
+
+Keep the three original R scripts and supplement under ignored `data/reference/`.
+The existing RData remains under ignored `data/raw/`. R is optional for Python
+fitting, but required for original-source parity and exact R random-start draws
+(use explicit `--start-rng numpy` if R is unavailable; this changes the RNG protocol).
+
+```sh
+python scripts/run_authors_baseline.py --audit-only
+python scripts/run_authors_baseline.py --participant E11T9A --variant all --restarts 200 --output /tmp/authors_e11.json
+python scripts/validate_authors_baseline.py --fits /tmp/authors_e11.json --r-optimization --synthetic
+python scripts/validate_authors_baseline.py --fits /tmp/authors_e11.json --refine-r-only
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 \
+  python scripts/run_authors_baseline.py --variant all --restarts 200 --workers 4 \
+  --output docs/authors_baseline_results.json
+python scripts/report_authors_baseline.py
+```
+
+Models 1/3/11/19 form the preregistered comparison; adding model 20 is exploratory.
+This uses the source's 200 starts and bounds, but SciPy rather than R `optimr`.
+The JSON retains fitting and rescoring deviances separately and exports labeled
+model-by-participant matrices. VBA exceedance probabilities are not reproduced.
