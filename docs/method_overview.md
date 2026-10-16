@@ -309,3 +309,19 @@ IRL or evidence of planning. CK and cumulative history also differ in their
 specified initialization and weight constraints, so any difference cannot isolate
 every property of history representation. Individual weights remain descriptive.
 The authors implementation and all previous synthetic mechanisms are unchanged.
+
+## Diagnosing generalization using training only
+
+After the final test was inspected, it was reserved from further model
+development. The [training-only diagnostics](history_diagnostics_results.md)
+use rolling-origin fits, with S1–S4 → S5 primary. All three existing models remain
+unchanged. Validation is one-step-ahead: parameters stay fixed while Q and history
+update causally from training feedback and choices. Participant bootstrap
+contrasts, chronological terciles, calibration, weighted history contributions,
+and memory-update sizes diagnose when models differ without adding a mechanism.
+
+The data constrain the question: equal-value pairs never appear in training,
+and every training reward difference is one supplied unit. Unobserved equal-pair
+state contrasts can be inspected, but cannot establish empirical preference or
+calibration. No final-test data fill these missing comparisons. Recency remains
+a hypothesis, not a conclusion supplied by the analysis design.

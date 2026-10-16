@@ -291,3 +291,25 @@ initialization sensitivity also uses pi=0. Saved 200-start benchmark parameters 
 and exact rows. `--participant E11T9A --restarts 10 --workers 1` supports debugging.
 Bootstrap intervals resample participants, not trials. Individual history weights
 are descriptive, not calibrated habit measurements. No planning is fitted to humans.
+
+## Training-only history diagnostics
+
+The [phase-resolved diagnostics](docs/history_diagnostics_results.md) refit the
+same three models on prior training sessions and validate sequentially on the
+next training session. S1–S4 → S5 is primary; earlier rolling folds are diagnostic.
+Q continues learning from validation feedback. The final-test object is never
+accessed by this pipeline; both phase and session guards enforce that boundary.
+
+```sh
+python scripts/run_history_diagnostics.py --stability-check --workers 4 \
+  --output docs/history_diagnostics_stability.json
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 \
+  python scripts/run_history_diagnostics.py --primary-restarts 200 \
+  --rolling-restarts 50 --workers 4 --output docs/history_diagnostics_results.json
+```
+
+JSON stores participant/fold diagnostics; a local ignored NPZ archive preserves
+trial-level causal states and logits. `--report-only` rebuilds the Markdown from
+saved JSON without fitting or loading human data. Training has no equal-value
+pairs and only one reward-gap level: unavailable behavioral comparisons are
+reported as unavailable, never supplied from the previously inspected final test.
