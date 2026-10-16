@@ -11,6 +11,11 @@ fits human choices to reproduce the published RL/choice-kernel baseline. It does
 not fit our novel history/IRL model. Read the [reproduction results](docs/authors_baseline_results.md)
 for the distinction between paper-described, code-intended, and literal-R scoring.
 
+The subsequent [human history comparison](docs/human_history_results.md) fits our
+myopic cumulative-history representation, holding reward learning fixed, and
+evaluates it against those benchmarks on held-out test choices. It does not fit
+planning or interpret individual weights as habit strength.
+
 ## Scientific question
 
 In the Reward Pairs task, people choose between two displayed stimuli with
@@ -198,8 +203,8 @@ Later work could study history-dependent choices, richer states, learning or
 habit mechanisms, human model comparison, and formal sequential IRL with an
 action-dependent environment. History remains outside v0; the separate
 running-rate milestone implements and evaluates one synthetic history mechanism.
-Human fitting and reward learning remain future work. A separate bounded
-history-aware planning milestone is described below.
+These synthetic milestones do not fit humans. Separate bounded planning,
+authors-benchmark, and human predictive-comparison milestones are described below.
 
 The [multi-scaffold replication](docs/history_replication.md) repeats the unchanged
 history baseline across 12 structurally selected sequences and 10 seed batches:
@@ -263,3 +268,26 @@ Models 1/3/11/19 form the preregistered comparison; adding model 20 is explorato
 This uses the source's 200 starts and bounds, but SciPy rather than R `optimr`.
 The JSON retains fitting and rescoring deviances separately and exports labeled
 model-by-participant matrices. VBA exceedance probabilities are not reproduced.
+
+## Human cumulative-history comparison
+
+The [human comparison](docs/human_history_results.md) fits a separate, myopic
+RL + cumulative-choice-history model. It holds the authors' RL rule and Q
+initialization constant, estimates a signed history weight, and compares final-test
+prediction against the unchanged authors RL and RL+CK implementations. Parameters
+are fitted only on training; test choices update history causally, without refitting.
+
+```sh
+python scripts/run_human_history_comparison.py --stability-check --restarts 200 \
+  --workers 4 --paper-sensitivity --output docs/human_history_restart_stability.json
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 \
+  python scripts/run_human_history_comparison.py --restarts 200 --workers 4 \
+  --paper-sensitivity --output docs/human_history_results.json
+```
+
+The primary convention is `released_code_intended`, with pi=0. The optional paper
+initialization sensitivity also uses pi=0. Saved 200-start benchmark parameters in
+`docs/authors_baseline_results.json` are replay-verified on the same raw-data hash
+and exact rows. `--participant E11T9A --restarts 10 --workers 1` supports debugging.
+Bootstrap intervals resample participants, not trials. Individual history weights
+are descriptive, not calibrated habit measurements. No planning is fitted to humans.

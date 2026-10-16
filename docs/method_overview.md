@@ -284,3 +284,28 @@ while H keeps updating causally. It has no forward planning. Human choices are
 used here only to reproduce this benchmark, not to validate psychological
 interpretations or fit our proposed IRL/history model. See the numerical
 [results](authors_baseline_results.md) before selecting a comparison baseline.
+
+## First human cumulative-history predictive comparison
+
+```text
+our synthetic IRL/history validation
+    -> audited authors RL + exponential-CK benchmark
+    -> human RL + causal cumulative history versus RL and RL+CK
+    -> next: assess held-out evidence before considering planning
+```
+
+The [human results](human_history_results.md) now fit our cumulative history
+representation to actual choices, separately from all previous synthetic models.
+The reward-learning rule and Q initialization stay identical to the selected
+authors benchmark. Only the history component changes: prior chosen/presented
+counts give `H=C/N-.5`, with zero for unseen stimuli, and a signed `beta_H`
+weights that feature. Counts carry across sessions and into test. Both Q values
+update from training feedback; Q freezes at test while counts update after each
+scored response. Training alone supplies fitted parameters.
+
+The primary comparison is participant-level held-out test log loss with paired
+participant bootstrap intervals. This is predictive model comparison, not human
+IRL or evidence of planning. CK and cumulative history also differ in their
+specified initialization and weight constraints, so any difference cannot isolate
+every property of history representation. Individual weights remain descriptive.
+The authors implementation and all previous synthetic mechanisms are unchanged.
