@@ -27,12 +27,19 @@ Active experiments:
 | --- | --- | --- |
 | E2: evaluation-phase kernel ablations (carried-in state vs updating vs kernel weight) | complete | [experiment2_ck_ablation.md](experiment2_ck_ablation.md) |
 | E3: α_CK profile likelihood, compensation, S5 sensitivity | complete | [experiment3_alpha_profile.md](experiment3_alpha_profile.md) |
-| E4: kernel initialization on the 0–1 scale (H4a), S2–S4 profile (H4b); two-rate kernel only if warranted (H4c) | proposed, not started | — |
+| E4: kernel initialization K0 ∈ {released, 0.5, 0} with Q0 unchanged; refits, session losses, α profiles | complete | [experiment4_ck_initialization.md](experiment4_ck_initialization.md) |
+| E5: scale-vs-preference decomposition of K0 (released K0 rescaled to [0, 1]) + parameter recovery from K0 = 0.5 fits | proposed, not started | — |
 
 Active inputs and code: `authors_baseline_results.json` (five-session fits), the RL/RL+CK
 session-5 fold fits inside `history_diagnostics_results.json`, `ck_ablation.py`,
 `ck_ablation_report.py`, `scripts/run_ck_ablation.py`, `ck_alpha_profile.py`, `ck_alpha_profile_report.py`, and
-`scripts/run_ck_alpha_profile.py` (per-participant cache in `data/derived/experiment3_alpha_profile/`).
+`scripts/run_ck_alpha_profile.py` (per-participant cache in `data/derived/experiment3_alpha_profile/`), `ck_initialization.py`,
+`ck_initialization_report.py`, and `scripts/run_ck_initialization.py` (cache in `data/derived/experiment4_ck_initialization/`).
+
+Current findings that shape the next step: the released K0 (= Q0, up to ≈ 4.1) inflates the fitted α_CK
+(median 0.129 → 0.049 with K0 = 0.5). This explains the E3 session-1 demand for a fast kernel, improves training
+likelihood by 4.4 nats on average, and leaves session-5 prediction unchanged. α_RL absorbs the pretraining-preference information
+removed from K0. E5 separates the scale of K0 from its stimulus-specific pattern before any baseline change.
 
 ## Archived: RL + cumulative choice history (historical comparator only)
 
