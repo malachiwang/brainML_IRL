@@ -1,5 +1,7 @@
 # Causal history baseline: actual synthetic results
 
+> **Archived — historical comparator, not an active research direction.** The cumulative-history representation was retired on 2026-11-07; this document is kept unchanged below for reproducibility. See [research_direction.md](research_direction.md).
+
 Completed 2026-10-05. This experiment uses the real **displayed-pair scaffold**
 and entirely synthetic actions. It does not fit human choices or human alpha.
 See [the model explanation](history_model.md) and

@@ -26,12 +26,13 @@ Active experiments:
 | Experiment | Status | Report |
 | --- | --- | --- |
 | E2: evaluation-phase kernel ablations (carried-in state vs updating vs kernel weight) | complete | [experiment2_ck_ablation.md](experiment2_ck_ablation.md) |
-| E3: α sensitivity / profile likelihood (α_CK first) | planned, not started | — |
-| E4: controlled kernel initialization / update-rule variants | planned, not started | — |
+| E3: α_CK profile likelihood, compensation, S5 sensitivity | complete | [experiment3_alpha_profile.md](experiment3_alpha_profile.md) |
+| E4: kernel initialization on the 0–1 scale (H4a), S2–S4 profile (H4b); two-rate kernel only if warranted (H4c) | proposed, not started | — |
 
 Active inputs and code: `authors_baseline_results.json` (five-session fits), the RL/RL+CK
 session-5 fold fits inside `history_diagnostics_results.json`, `ck_ablation.py`,
-`ck_ablation_report.py`, and `scripts/run_ck_ablation.py`.
+`ck_ablation_report.py`, `scripts/run_ck_ablation.py`, `ck_alpha_profile.py`, `ck_alpha_profile_report.py`, and
+`scripts/run_ck_alpha_profile.py` (per-participant cache in `data/derived/experiment3_alpha_profile/`).
 
 ## Archived: RL + cumulative choice history (historical comparator only)
 

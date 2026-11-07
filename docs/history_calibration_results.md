@@ -1,5 +1,7 @@
 # History uncertainty and planning distinguishability: synthetic calibration
 
+> **Archived — historical comparator, not an active research direction.** The cumulative-history representation was retired on 2026-11-07; this document is kept unchanged below for reproducibility. See [research_direction.md](research_direction.md).
+
 This report tests two different claims: evidence for a history coefficient and
 evidence that history-dependent behavior is forward-looking. The
 [method explanation](history_calibration.md) specifies the unchanged mechanisms,

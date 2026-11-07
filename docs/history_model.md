@@ -1,5 +1,7 @@
 # Fake Human with causal choice history
 
+> **Archived — historical comparator, not an active research direction.** The cumulative-history representation was retired on 2026-11-07; this document is kept unchanged below for reproducibility. See [research_direction.md](research_direction.md).
+
 ## Why add history?
 
 The original Fake Human, or Fake Bob, values each stimulus the same way forever.

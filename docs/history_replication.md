@@ -1,5 +1,7 @@
 # History-sensitive Fake Human: multi-scaffold replication
 
+> **Archived — historical comparator, not an active research direction.** The cumulative-history representation was retired on 2026-11-07; this document is kept unchanged below for reproducibility. See [research_direction.md](research_direction.md).
+
 This milestone asks whether the previous one-scaffold synthetic result survives
 changes in the displayed-pair sequence. It does not fit human choices, introduce
 a new behavioral model, or implement history-aware IRL. Results and full-precision

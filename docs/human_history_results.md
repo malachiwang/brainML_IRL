@@ -1,5 +1,7 @@
 # Human RL + cumulative-history predictive comparison
 
+> **Archived — historical comparator, not an active research direction.** The cumulative-history representation was retired on 2026-11-07; this document is kept unchanged below for reproducibility. See [research_direction.md](research_direction.md).
+
 This is the first fit of our cumulative representation to real human choices. It is **not forward planning**, reward-function IRL, or an individual habit diagnostic. Authors RL and RL+CK are unchanged. The primary benchmark is released-code-intended with pi=0; literal mathematical-pi scoring is not used.
 
 ## Model, data, and fixed analysis design

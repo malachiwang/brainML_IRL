@@ -1,5 +1,7 @@
 # Uncertainty about history is not evidence about planning
 
+> **Archived — historical comparator, not an active research direction.** The cumulative-history representation was retired on 2026-11-07; this document is kept unchanged below for reproducibility. See [research_direction.md](research_direction.md).
+
 The earlier synthetic milestones recovered known utilities and history strength
 with enough independent agents. They also exposed a serious limitation: a
 single agent often had a large, wrong-sign alpha estimate. A point estimate

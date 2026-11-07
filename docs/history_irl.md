@@ -1,5 +1,7 @@
 # Planning with choice history: the first sequential IRL model
 
+> **Archived — historical comparator, not an active research direction.** The cumulative-history representation was retired on 2026-11-07; this document is kept unchanged below for reproducibility. See [research_direction.md](research_direction.md).
+
 The earlier history-sensitive Bob remembers past selections, but acts myopically:
 he compares today's effective values, `U_i + alpha H_i`. He does not account for
 how today's choice changes tomorrow's history. That model and all its existing

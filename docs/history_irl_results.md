@@ -1,5 +1,7 @@
 # History-aware finite-lookahead IRL: synthetic results
 
+> **Archived — historical comparator, not an active research direction.** The cumulative-history representation was retired on 2026-11-07; this document is kept unchanged below for reproducibility. See [research_direction.md](research_direction.md).
+
 This experiment separates **myopic History Bob** from **Planning History Bob**.
 It uses synthetic actions only. The [model specification](history_irl.md)
 explains the planner and likelihood; [full results](history_irl_results.json)

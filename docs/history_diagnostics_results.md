@@ -1,5 +1,7 @@
 # Training-only phase-resolved history diagnostics
 
+> **Partly archived.** The RL+cumulative parts of this document are a historical comparator and no longer an active direction (retired 2026-11-07). The RL and RL+CK training-only fold fits reported here remain active inputs (e.g. Experiment 2). See [research_direction.md](research_direction.md).
+
 This analysis refits only the three existing models. It adds no mechanism, planning, regularization, reset, or new exclusion. The previously inspected final test is not used for fitting, scoring, diagnostics, or selection. Primary validation is S1–S4 → S5; secondary folds are S1 → S2, S1–S2 → S3, S1–S3 → S4. All held-out sessions still contain reward feedback: Q and histories continue updating after each scored response, without parameter refitting.
 
 ## Protocol and data support
