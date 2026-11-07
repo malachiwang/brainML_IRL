@@ -28,7 +28,8 @@ Active experiments:
 | E2: evaluation-phase kernel ablations (carried-in state vs updating vs kernel weight) | complete | [experiment2_ck_ablation.md](experiment2_ck_ablation.md) |
 | E3: α_CK profile likelihood, compensation, S5 sensitivity | complete | [experiment3_alpha_profile.md](experiment3_alpha_profile.md) |
 | E4: kernel initialization K0 ∈ {released, 0.5, 0} with Q0 unchanged; refits, session losses, α profiles | complete | [experiment4_ck_initialization.md](experiment4_ck_initialization.md) |
-| E5: scale-vs-preference decomposition of K0 (released K0 rescaled to [0, 1]) + parameter recovery from K0 = 0.5 fits | proposed, not started | — |
+| E5: K0 mechanisms (level / spread / pattern identity, 8 variants + pretest-choice follow-up) and parameter recovery | complete | [experiment5_ck_init_mechanisms.md](experiment5_ck_init_mechanisms.md) |
+| E6: explicit pre-training-preference term with its own decay (uniform K0), validated by recovery before S5 comparison | proposed, not started | — |
 
 Active inputs and code: `authors_baseline_results.json` (five-session fits), the RL/RL+CK
 session-5 fold fits inside `history_diagnostics_results.json`, `ck_ablation.py`,
@@ -39,7 +40,16 @@ session-5 fold fits inside `history_diagnostics_results.json`, `ck_ablation.py`,
 Current findings that shape the next step: the released K0 (= Q0, up to ≈ 4.1) inflates the fitted α_CK
 (median 0.129 → 0.049 with K0 = 0.5). This explains the E3 session-1 demand for a fast kernel, improves training
 likelihood by 4.4 nats on average, and leaves session-5 prediction unchanged. α_RL absorbs the pretraining-preference information
-removed from K0. E5 separates the scale of K0 from its stimulus-specific pattern before any baseline change.
+removed from K0.
+
+E5 (2026-11-07) results:
+- The spread of an off-scale K0 inflates α_CK; the level is inert, and pattern identity instead drives α_RL through
+  double-counting the prior.
+- Synthetic recovery shows fitting the released K0 to neutral-start behaviour inflates α_CK about 2.2×.
+- The real data match the neutral-start population.
+
+Recommended initialization: uniform K0. Open question: the representation and persistence of pre-training
+preference (E6).
 
 ## Archived: RL + cumulative choice history (historical comparator only)
 
